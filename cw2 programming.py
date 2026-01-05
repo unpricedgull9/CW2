@@ -5,12 +5,13 @@ while True:
     # Ask the user to enter a word and remove extra spaces
     word = input("Enter the word you would like definitions for (to quit write !Exit)\n").strip()
 
+    # Validate input
     if  word == None or word == "":
-        ("please enter a valid word")
+        print("please enter a valid word")
         continue
     # Exit condition
     elif word.lower() == "!exit":
-        print("Program exited.")
+        print("Program exited.Goodbye!")
         break
 
 
