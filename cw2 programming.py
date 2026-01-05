@@ -1,5 +1,4 @@
 import requests          # Used to send HTTP requests to the API
-import json              # Used for working with JSON data
 import datetime          # Used to get the current date and time
 
 while True:
