@@ -3,12 +3,16 @@ import datetime          # Used to get the current date and time
 
 while True:
     # Ask the user to enter a word and remove extra spaces
-    word = input("Enter the word you would like definitions for (to quit write esc)\n").strip()
+    word = input("Enter the word you would like definitions for (to quit write !Exit)\n").strip()
 
+    if  word == None or word == "":
+        ("please enter a valid word")
+        continue
     # Exit condition
-    if word.lower() == "esc":
+    elif word.lower() == "!exit":
         print("Program exited.")
         break
+
 
     # Build the API URL using the entered word
     url = f"https://dictionary-api-7hmy.onrender.com/define?word={word}"
